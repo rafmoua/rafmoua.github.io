@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rafael Mouallem Rosa</title>
+<title>Research</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,11 +71,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rafael Mouallem Rosa</h1>
+<h1 class="title">Research</h1>
 </div>
 
 
@@ -124,28 +124,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I am a postdoctoral researcher at Inria working on Bayesian inference, model uncertainty, and statistical learning.</p>
-<p>My current research develops the <strong>Sources of Uncertainty</strong> framework, an extension of Bayesian inference that allows researchers to model different degrees of confidence across components of a probabilistic model. This perspective connects ideas from decision theory, generalized Bayes, variational inference, and modern machine learning.</p>
-<p>A central goal of my work is to develop Bayesian methods that remain useful when model uncertainty is not just a technical detail, but a core part of the problem. Recent applications include sparse Bayesian learning, global-local shrinkage methods, and self-pruning Bayesian neural networks.</p>
-<p>Before joining Inria, I completed a Ph.D.&nbsp;in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. This background shapes my interest in statistical methods for high-dimensional, uncertain, and decision-relevant environments.</p>
-<section id="research-areas" class="level2">
-<h2 class="anchored" data-anchor-id="research-areas">Research areas</h2>
+<p>My research focuses on Bayesian inference, model uncertainty, and statistical learning.</p>
+<p>The central question in my current work is how Bayesian inference should be modified when the researcher has different degrees of confidence in different components of a probabilistic model. This question connects decision theory, generalized Bayes, variational inference, and modern machine learning.</p>
+<section id="sources-of-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-uncertainty">Sources of Uncertainty</h2>
+<p>I develop the <strong>Sources of Uncertainty</strong> framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.</p>
+<p>The framework separates two ideas that are usually intertwined:</p>
 <ul>
-<li>Bayesian inference and generalized Bayes</li>
-<li>Model uncertainty and confidence modelling</li>
-<li>Variational inference</li>
-<li>Sparse Bayesian learning and global-local priors</li>
-<li>Bayesian neural networks and model selection</li>
+<li>the informativeness of a prior;</li>
+<li>the confidence assigned to the source of uncertainty represented by that prior.</li>
 </ul>
+<p>This provides an additional modelling tool for controlling posterior concentration and regularisation.</p>
 </section>
-<section id="selected-work" class="level2">
-<h2 class="anchored" data-anchor-id="selected-work">Selected work</h2>
-<p><strong>Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation</strong> Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026.</p>
-<p>This paper introduces the Sources of Uncertainty framework and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks.</p>
+<section id="sparse-bayesian-learning" class="level2">
+<h2 class="anchored" data-anchor-id="sparse-bayesian-learning">Sparse Bayesian learning</h2>
+<p>Building on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.</p>
+<p>This leads to <strong>SoU-SGL</strong>, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero.</p>
 </section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Email: rafael.mouallem-rosa@inria.fr</p>
+<section id="bayesian-neural-networks" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-neural-networks">Bayesian neural networks</h2>
+<p>I am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.</p>
+<p>Recent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance.</p>
+</section>
+<section id="broader-interests" class="level2">
+<h2 class="anchored" data-anchor-id="broader-interests">Broader interests</h2>
+<ul>
+<li>Bayesian inference</li>
+<li>Generalized Bayes</li>
+<li>Variational inference</li>
+<li>Model uncertainty</li>
+<li>Sparse Bayesian learning</li>
+<li>Bayesian neural networks</li>
+<li>Decision-theoretic foundations of statistics</li>
+</ul>
 
 
 </section>

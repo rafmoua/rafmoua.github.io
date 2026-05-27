@@ -1,0 +1,38 @@
+.navbar-brand img {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+}
+
+/* Slightly shift the main content left on large screens,
+   so the page feels balanced with the profile photo on the right. */
+@media (min-width: 1200px) {
+  main.content {
+    position: relative;
+    left: -100px;
+  }
+}
+
+.side-profile {
+  position: fixed;
+  top: 115px;
+  right: max(2rem, calc((100vw - 900px) / 2 - 105px));
+  z-index: 10;
+  pointer-events: none;
+}
+
+.side-profile img {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Hide the photo on smaller screens to avoid overlapping the text */
+@media (max-width: 1250px) {
+  .side-profile {
+    display: none;
+  }
+}
