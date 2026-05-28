@@ -1,4 +1,4 @@
-/* Sidebar profile card on desktop */
+/* Desktop profile sidebar */
 
 .profile-sidebar {
   position: fixed;
@@ -9,6 +9,7 @@
   font-size: 0.92rem;
   line-height: 1.35;
   color: #333;
+  z-index: 1000;
 }
 
 .profile-sidebar img {
@@ -40,38 +41,18 @@
   text-decoration: none;
 }
 
-/* Hide sidebar on smaller screens */
-
-@media (max-width: 1199px) {
-  .profile-sidebar {
-    display: none;
-  }
-}
-
-/* Navbar photo: hidden on desktop, visible on mobile/tablet */
-
-.navbar-logo {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-@media (min-width: 1200px) {
-  .navbar-logo {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .navbar-logo {
-    width: 34px;
-    height: 34px;
-  }
-}
-
+/* Mobile profile photo */
 
 .mobile-profile-link {
   display: none;
 }
+
+/* Hide Quarto navbar logo if it still exists */
+.navbar-logo {
+  display: none;
+}
+
+/* Mobile/tablet layout */
 
 @media (max-width: 1199px) {
   .profile-sidebar {
@@ -94,3 +75,10 @@
   }
 }
 
+/* Desktop layout */
+
+@media (min-width: 1200px) {
+  .mobile-profile-link {
+    display: none;
+  }
+}
