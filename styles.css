@@ -140,3 +140,34 @@
 .cv-download:hover {
   opacity: 0.75;
 }
+
+.cv-download-block {
+  margin: 0.25rem 0 1.75rem 0;
+}
+
+.cv-download-block a {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: inherit;
+  background: transparent;
+}
+
+.cv-download-block a:hover {
+  background: #f5f5f5;
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .cv-download-block {
+    display: block;
+    margin: 0.5rem 0 1.75rem 0;
+  }
+
+  .cv-download-block a {
+    display: inline-block;
+  }
+}
