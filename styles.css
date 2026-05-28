@@ -148,6 +148,9 @@
 }
 
 @media (max-width: 1199px) {
+  main.content {
+    padding-top: 1.25rem;
+  }
   .cv-download-block {
     display: block;
     margin: 0.5rem 0 1.75rem 0;
