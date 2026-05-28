@@ -185,3 +185,19 @@
     background: transparent;
   }
 }
+
+@media (max-width: 1199px) {
+  #quarto-content,
+  main#quarto-document-content,
+  .page-columns {
+    padding-top: 30px !important;
+  }
+
+  .cv-download-block {
+    display: block !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.75rem !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+}
