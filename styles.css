@@ -148,9 +148,6 @@
 }
 
 @media (max-width: 1199px) {
-  main.content {
-    padding-top: 1.25rem;
-  }
   .cv-download-block {
     display: block;
     margin: 0.5rem 0 1.75rem 0;
@@ -158,5 +155,33 @@
 
   .cv-download-block a {
     display: inline-block;
+  }
+}
+
+
+/* Make top content visible below fixed mobile navbar */
+
+@media (max-width: 1199px) {
+  main.content {
+    padding-top: 1.25rem;
+  }
+
+  .cv-download-block {
+    display: block !important;
+    visibility: visible !important;
+    margin: 0.75rem 0 1.75rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cv-download-block a {
+    display: inline-block !important;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid #bbb;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: inherit;
+    background: transparent;
   }
 }
