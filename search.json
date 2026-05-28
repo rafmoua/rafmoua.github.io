@@ -28,13 +28,6 @@
     "text": "Bayesian neural networks\nI am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.\nRecent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance."
   },
   {
-    "objectID": "research.html#broader-interests",
-    "href": "research.html#broader-interests",
-    "title": "Research",
-    "section": "Broader interests",
-    "text": "Broader interests\n\nBayesian inference\nGeneralized Bayes\nVariational inference\nModel uncertainty\nSparse Bayesian learning\nBayesian neural networks\nDecision-theoretic foundations of statistics"
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
@@ -63,25 +56,11 @@
     "text": "I am a postdoctoral researcher at Inria working on Bayesian inference and Bayesian machine learning.\nMy research centers on the Sources of Uncertainty framework, which extends Bayesian inference by allowing different components of a probabilistic model to be associated with different levels of confidence. I use this framework to study sparsity-inducing Bayesian methods, with current applications to Bayesian neural networks.\nBefore joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic representation of agents’ choices under uncertainty, the real confrontation with uncertainty in financial markets, and the modelling of uncertainty in Bayesian statistical learning."
   },
   {
-    "objectID": "index.html#research-areas",
-    "href": "index.html#research-areas",
-    "title": "Rafael Mouallem Rosa",
-    "section": "Research areas",
-    "text": "Research areas\n\nBayesian inference and generalized Bayes\nModel uncertainty and confidence modelling\nVariational inference\nSparse Bayesian learning and global-local priors\nBayesian neural networks and model selection"
-  },
-  {
     "objectID": "index.html#selected-work",
     "href": "index.html#selected-work",
     "title": "Rafael Mouallem Rosa",
     "section": "Selected work",
     "text": "Selected work\nBayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026. [arXiv]\nIntroduces the Sources of Uncertainty framework for Bayesian inference and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks."
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Rafael Mouallem Rosa",
-    "section": "Contact",
-    "text": "Contact\nEmail: rafael.mouallem-rosa@inria.fr"
   },
   {
     "objectID": "contact.html",
