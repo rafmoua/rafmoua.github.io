@@ -4,35 +4,35 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "My research focuses on Bayesian inference, model uncertainty, and statistical learning.\nThe central question in my current work is how Bayesian inference should be modified when the researcher has different degrees of confidence in different components of a probabilistic model. This question connects decision theory, generalized Bayes, variational inference, and modern machine learning."
+    "text": "My research focuses on Bayesian inference, model uncertainty, and statistical learning.\nThe central question in my current work is how Bayesian inference should be modified when the researcher has different degrees of confidence in different components of a probabilistic model. This question connects decision theory, generalized Bayes, variational inference, and modern machine learning.\n\n\nI develop the Sources of Uncertainty framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.\nThe framework separates two ideas that are usually intertwined:\n\nthe informativeness of a prior;\nthe confidence assigned to the source of uncertainty represented by that prior.\n\nThis provides an additional modelling tool for controlling posterior concentration and regularisation.\n\n\n\nBuilding on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.\nThis leads to SoU-SGL, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero.\n\n\n\nI am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.\nRecent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance."
   },
   {
     "objectID": "research.html#sources-of-uncertainty",
     "href": "research.html#sources-of-uncertainty",
     "title": "Research",
-    "section": "Sources of Uncertainty",
-    "text": "Sources of Uncertainty\nI develop the Sources of Uncertainty framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.\nThe framework separates two ideas that are usually intertwined:\n\nthe informativeness of a prior;\nthe confidence assigned to the source of uncertainty represented by that prior.\n\nThis provides an additional modelling tool for controlling posterior concentration and regularisation."
+    "section": "",
+    "text": "I develop the Sources of Uncertainty framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.\nThe framework separates two ideas that are usually intertwined:\n\nthe informativeness of a prior;\nthe confidence assigned to the source of uncertainty represented by that prior.\n\nThis provides an additional modelling tool for controlling posterior concentration and regularisation."
   },
   {
     "objectID": "research.html#sparse-bayesian-learning",
     "href": "research.html#sparse-bayesian-learning",
     "title": "Research",
-    "section": "Sparse Bayesian learning",
-    "text": "Sparse Bayesian learning\nBuilding on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.\nThis leads to SoU-SGL, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero."
+    "section": "",
+    "text": "Building on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.\nThis leads to SoU-SGL, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero."
   },
   {
     "objectID": "research.html#bayesian-neural-networks",
     "href": "research.html#bayesian-neural-networks",
     "title": "Research",
-    "section": "Bayesian neural networks",
-    "text": "Bayesian neural networks\nI am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.\nRecent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance."
+    "section": "",
+    "text": "I am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.\nRecent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance."
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026. [arXiv]\nBayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. Accepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop. [Workshop]\nBayesian Structured Sparsity for Compact Architecture Recovery Rafael Mouallem Rosa, Julyan Arbel. Manuscript."
+    "text": "Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026. [arXiv]\nBayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. Accepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop. [Workshop]\nBayesian Structured Sparsity for Compact Architecture Recovery Rafael Mouallem Rosa, Julyan Arbel. Manuscript.\n\n\n\nComplete markets with bankruptcy risk and pecuniary default punishments Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa. Economic Theory, 75(3), 625–640, 2023. [DOI]\nSecond-Order Beliefs and Second-Order Expected Utility Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa. HAL preprint, 2020. [HAL]\nInvestment-specific technological change and the Brazilian macroeconomy Vladimir Kuhl Teles, Carlos Junior, and Rafael Mouallem Rosa. Brazilian Review of Econometrics, 35(2), 233–264, 2015. [Journal]"
   },
   {
     "objectID": "publications.html#statistics-and-machine-learning",
@@ -45,22 +45,22 @@
     "objectID": "publications.html#economics-and-decision-theory",
     "href": "publications.html#economics-and-decision-theory",
     "title": "Publications",
-    "section": "Economics and decision theory",
-    "text": "Economics and decision theory\nComplete markets with bankruptcy risk and pecuniary default punishments Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa. Economic Theory, 75(3), 625–640, 2023. [DOI]\nSecond-Order Beliefs and Second-Order Expected Utility Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa. HAL preprint, 2020. [HAL]\nInvestment-specific technological change and the Brazilian macroeconomy Vladimir Kuhl Teles, Carlos Junior, and Rafael Mouallem Rosa. Brazilian Review of Econometrics, 35(2), 233–264, 2015. [Journal]"
+    "section": "",
+    "text": "Complete markets with bankruptcy risk and pecuniary default punishments Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa. Economic Theory, 75(3), 625–640, 2023. [DOI]\nSecond-Order Beliefs and Second-Order Expected Utility Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa. HAL preprint, 2020. [HAL]\nInvestment-specific technological change and the Brazilian macroeconomy Vladimir Kuhl Teles, Carlos Junior, and Rafael Mouallem Rosa. Brazilian Review of Econometrics, 35(2), 233–264, 2015. [Journal]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Rafael Mouallem Rosa",
     "section": "",
-    "text": "I am a postdoctoral researcher at Inria working on Bayesian inference and Bayesian machine learning.\nMy research centers on the Sources of Uncertainty framework, which extends Bayesian inference by allowing different components of a probabilistic model to be associated with different levels of confidence. I use this framework to study sparsity-inducing Bayesian methods, with current applications to Bayesian neural networks.\nBefore joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic representation of agents’ choices under uncertainty, the real confrontation with uncertainty in financial markets, and the modelling of uncertainty in Bayesian statistical learning."
+    "text": "I am a postdoctoral researcher at Inria working on Bayesian inference and Bayesian machine learning.\nMy research centers on the Sources of Uncertainty framework, which extends Bayesian inference by allowing different components of a probabilistic model to be associated with different levels of confidence. I use this framework to study sparsity-inducing Bayesian methods, with current applications to Bayesian neural networks.\nBefore joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic representation of agents’ choices under uncertainty, the real confrontation with uncertainty in financial markets, and the modelling of uncertainty in Bayesian statistical learning.\n\n\nBayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026. [arXiv]\nIntroduces the Sources of Uncertainty framework for Bayesian inference and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks."
   },
   {
     "objectID": "index.html#selected-work",
     "href": "index.html#selected-work",
     "title": "Rafael Mouallem Rosa",
-    "section": "Selected work",
-    "text": "Selected work\nBayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026. [arXiv]\nIntroduces the Sources of Uncertainty framework for Bayesian inference and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks."
+    "section": "",
+    "text": "Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026. [arXiv]\nIntroduces the Sources of Uncertainty framework for Bayesian inference and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks."
   },
   {
     "objectID": "contact.html",

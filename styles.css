@@ -122,3 +122,9 @@
     display: none;
   }
 }
+
+
+/* Hide Quarto automatic page title block */
+.quarto-title-block {
+  display: none;
+}
