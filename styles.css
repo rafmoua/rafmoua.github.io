@@ -129,21 +129,7 @@
   display: none;
 }
 
-.cv-download {
-  display: inline-block;
-  margin: 0.25rem 0 1.5rem 0;
-  font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-}
 
-.cv-download:hover {
-  opacity: 0.75;
-}
-
-.cv-download-block {
-  margin: 0.25rem 0 1.75rem 0;
-}
 
 .cv-download-block a {
   display: inline-block;
