@@ -82,3 +82,43 @@
     display: none;
   }
 }
+
+/* Keep Quarto navbar visible on mobile scroll */
+
+@media (max-width: 1199px) {
+  header#quarto-header,
+  header#quarto-header.headroom,
+  header#quarto-header.headroom--pinned,
+  header#quarto-header.headroom--unpinned,
+  .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1990 !important;
+    transform: none !important;
+  }
+
+  body {
+    padding-top: 56px;
+  }
+
+  .mobile-profile-link {
+    display: block;
+    position: fixed;
+    top: 9px;
+    left: 70px;
+    z-index: 2000;
+  }
+
+  .mobile-profile-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-sidebar {
+    display: none;
+  }
+}
