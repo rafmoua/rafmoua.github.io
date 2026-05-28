@@ -67,3 +67,30 @@
     height: 34px;
   }
 }
+
+
+.mobile-profile-link {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .profile-sidebar {
+    display: none;
+  }
+
+  .mobile-profile-link {
+    display: block;
+    position: fixed;
+    top: 9px;
+    left: 70px;
+    z-index: 2000;
+  }
+
+  .mobile-profile-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
