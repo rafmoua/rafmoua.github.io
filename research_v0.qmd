@@ -1,0 +1,46 @@
+---
+title: "Research"
+---
+
+# Research
+
+My research focuses on Bayesian inference, model uncertainty, and statistical learning.
+
+The central question in my current work is how Bayesian inference should be modified when the researcher has different degrees of confidence in different components of a probabilistic model. This question connects decision theory, generalized Bayes, variational inference, and modern machine learning.
+
+## Sources of Uncertainty
+
+I develop the **Sources of Uncertainty** framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.
+
+The framework separates two ideas that are usually intertwined:
+
+- the informativeness of a prior;
+- the confidence assigned to the source of uncertainty represented by that prior.
+
+This provides an additional modelling tool for controlling posterior concentration and regularisation.
+
+## Sparse Bayesian learning
+
+Building on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.
+
+This leads to **SoU-SGL**, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero.
+
+## Bayesian neural networks
+
+I am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.
+
+Recent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance.
+
+<!--
+
+## Broader interests
+
+- Bayesian inference
+- Generalized Bayes
+- Variational inference
+- Model uncertainty
+- Sparse Bayesian learning
+- Bayesian neural networks
+- Decision-theoretic foundations of statistics
+
+-->

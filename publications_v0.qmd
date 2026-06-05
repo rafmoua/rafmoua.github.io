@@ -1,0 +1,26 @@
+---
+title: "Publications"
+---
+
+
+## Statistics and machine learning
+
+**Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation**
+Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen.
+arXiv preprint, 2026.
+
+This paper introduces the Sources of Uncertainty framework for Bayesian inference and develops SoU-SGL, a sparsity-inducing method with applications to linear regression, logistic regression, and Bayesian neural networks.
+
+## Economics and decision theory
+
+**Complete markets with bankruptcy risk and pecuniary default punishments**
+Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa.
+*Economic Theory*, 75(3), 625--640, 2023.
+
+**Second-Order Beliefs and Second-Order Expected Utility**
+Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa.
+HAL preprint, 2020.
+
+**Investment-specific technological change and the Brazilian macroeconomy**
+Vladimir Kuhl Teles, Carlos Junior, and Rafael Mouallem Rosa.
+*Brazilian Review of Econometrics*, 35(2), 233--264, 2015.

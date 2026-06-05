@@ -1,0 +1,96 @@
+/* Sidebar profile card on desktop */
+
+.profile-sidebar {
+  position: fixed;
+  top: 105px;
+  left: max(1.5rem, calc((100vw - 900px) / 2 - 230px));
+  width: 185px;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: #333;
+}
+
+.profile-sidebar img {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.profile-name {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.profile-role,
+.profile-affiliation,
+.profile-location {
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+
+.profile-links {
+  margin-top: 0.8rem;
+}
+
+.profile-links a {
+  text-decoration: none;
+}
+
+/* Hide sidebar on smaller screens */
+
+@media (max-width: 1199px) {
+  .profile-sidebar {
+    display: none;
+  }
+}
+
+/* Navbar photo: hidden on desktop, visible on mobile/tablet */
+
+.navbar-logo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+  .navbar-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-logo {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+
+.mobile-profile-link {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .profile-sidebar {
+    display: none;
+  }
+
+  .mobile-profile-link {
+    display: block;
+    position: fixed;
+    top: 9px;
+    left: 70px;
+    z-index: 2000;
+  }
+
+  .mobile-profile-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+

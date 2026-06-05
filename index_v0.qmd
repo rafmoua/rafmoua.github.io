@@ -1,0 +1,35 @@
+---
+title: "Rafael Mouallem Rosa"
+---
+
+
+
+I am a postdoctoral researcher at Inria working on Bayesian inference, model uncertainty, and statistical learning.
+
+My current research develops the **Sources of Uncertainty** framework, an extension of Bayesian inference that allows researchers to model different degrees of confidence across components of a probabilistic model. This perspective connects ideas from decision theory, generalized Bayes, variational inference, and modern machine learning.
+
+A central goal of my work is to develop Bayesian methods that remain useful when model uncertainty is not just a technical detail, but a core part of the problem. Recent applications include sparse Bayesian learning, global-local shrinkage methods, and self-pruning Bayesian neural networks.
+
+Before joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. This background shapes my interest in statistical methods for high-dimensional, uncertain, and decision-relevant environments.
+
+## Research areas
+
+- Bayesian inference and generalized Bayes
+- Model uncertainty and confidence modelling
+- Variational inference
+- Sparse Bayesian learning and global-local priors
+- Bayesian neural networks and model selection
+
+## Selected work
+
+**Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation**
+Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen.
+arXiv preprint, 2026.
+
+This paper introduces the Sources of Uncertainty framework and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks.
+
+
+
+## Contact
+
+Email: rafael.mouallem-rosa@inria.fr
