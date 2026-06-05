@@ -1,0 +1,51 @@
+---
+title: "CV"
+---
+<!--
+
+[Download CV](files/CV_Rafael_Mouallem_Rosa.pdf){.btn .btn-primary}
+
+[Download PDF](files/CV_Rafael_Mouallem_Rosa.pdf){.cv-download}
+-->
+
+
+
+<div class="cv-download-block">
+  <a href="files/CV_Rafael_Mouallem_Rosa.pdf">Download CV (PDF)</a>
+</div>
+
+
+## Current position
+
+**Postdoctoral Researcher**
+Inria, Statify team
+Grenoble, France
+2024--present
+
+## Education
+
+**Ph.D. in Economics**
+São Paulo School of Economics, Fundação Getulio Vargas
+2015--2019
+
+**Visiting Scholar**
+Harvard University, Department of Economics
+2018--2019
+
+**M.S. in Economics**
+São Paulo School of Economics, Fundação Getulio Vargas
+2013--2015
+
+**B.S. in Economics**
+PUC-SP
+2005--2010
+
+## Previous industry experience
+
+**Quantitative Portfolio Manager**
+Safra Asset Management
+2020--2022
+
+**Partner and Economist**
+Macro Capital Asset Management
+2019--2020

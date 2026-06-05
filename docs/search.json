@@ -4,6 +4,27 @@
     "href": "index.html",
     "title": "Rafael M",
     "section": "",
-    "text": "Rafael M\nPostdoctoral researcher.\nThis website is under construction."
+    "text": "I am a postdoctoral researcher at Inria working on Bayesian inference, model uncertainty, and statistical learning.\nMy current research develops the Sources of Uncertainty framework, an extension of Bayesian inference that allows researchers to model different degrees of confidence across components of a probabilistic model. This perspective connects ideas from decision theory, generalized Bayes, variational inference, and modern machine learning.\nA central goal of my work is to develop Bayesian methods that remain useful when model uncertainty is not just a technical detail, but a core part of the problem. Recent applications include sparse Bayesian learning, global-local shrinkage methods, and self-pruning Bayesian neural networks.\nBefore joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. This background shapes my interest in statistical methods for high-dimensional, uncertain, and decision-relevant environments."
+  },
+  {
+    "objectID": "index.html#research-areas",
+    "href": "index.html#research-areas",
+    "title": "Rafael M",
+    "section": "Research areas",
+    "text": "Research areas\n\nBayesian inference and generalized Bayes\nModel uncertainty and confidence modelling\nVariational inference\nSparse Bayesian learning and global-local priors\nBayesian neural networks and model selection"
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Rafael M",
+    "section": "Selected work",
+    "text": "Selected work\nBayesian inference with sources of uncertainty: from confidence modelling to sparse estimation Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026.\nThis paper introduces the Sources of Uncertainty framework and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Rafael M",
+    "section": "Contact",
+    "text": "Contact\nEmail: rafael.mouallem-rosa@inria.fr"
   }
 ]

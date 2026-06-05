@@ -1,16 +1,28 @@
 project:
   type: website
-  output-dir: docs
 
 website:
-  title: "Rafael M"
+#  title: "Rafael Mouallem Rosa"
+  search: false
   navbar:
+#    logo: images/profile2.jpg
+#    logo: images/profile2.jpg
+    pinned: true
     left:
       - href: index.qmd
         text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: cv.qmd
+        text: CV
+#      - href: contact.qmd
+#        text: Contact
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: false
+    include-after-body: _includes/profile.html

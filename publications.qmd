@@ -1,0 +1,38 @@
+---
+title: "Publications"
+---
+
+# Publications
+
+## Statistics and machine learning
+
+**Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation**
+Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen.
+arXiv preprint, 2026.
+[[arXiv](https://arxiv.org/abs/2605.03134)]
+
+**Bayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity**
+Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen.
+Accepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop.
+[[Workshop](https://optimal-workshop26.github.io/)]
+
+**Bayesian Structured Sparsity for Compact Architecture Recovery**
+Rafael Mouallem Rosa, Julyan Arbel.
+Manuscript.
+
+## Economics and decision theory
+
+**Complete markets with bankruptcy risk and pecuniary default punishments**
+Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa.
+*Economic Theory*, 75(3), 625--640, 2023.
+[[DOI](https://link.springer.com/article/10.1007/s00199-022-01429-1)]
+
+**Second-Order Beliefs and Second-Order Expected Utility**
+Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa.
+HAL preprint, 2020.
+[[HAL](https://hal.science/hal-02922263/)]
+
+**Investment-specific technological change and the Brazilian macroeconomy**
+Vladimir Kuhl Teles, Carlos Junior, and Rafael Mouallem Rosa.
+*Brazilian Review of Econometrics*, 35(2), 233--264, 2015.
+[[Journal](https://bibliotecadigital.fgv.br/ojs/index.php/bre/article/view/57675)]

@@ -33,3 +33,38 @@ This paper introduces the Sources of Uncertainty framework and develops SoU-SGL,
 ## Contact
 
 Email: rafael.mouallem-rosa@inria.fr
+
+
+
+
+## REST
+
+
+Before joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty:
+the axiomatic representation of agents’ choices under uncertainty, the real confrontation with uncertainty in financial markets, and the modelling of uncertainty in Bayesian statistical learning.
+
+
+Before joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: how it is represented, how it affects decisions, and how statistical methods can account for it.
+
+the axiomatic representation of agents’ choices under uncertainty, the real confrontation with uncertainty in financial markets, and the modelling of uncertainty in Bayesian statistical learning.
+
+the axiomatic representation of agents’ choices under uncertainty
+
+the real confrontation with uncertainty in financial markets,
+
+the modelling of uncertainty in Bayesian statistical learning
+
+how agents’ choices under uncertainty can be represented mathematically through axioms on preferences
+
+the axiomatic representation of preferences and beliefs under uncertainty, the confrontation of uncertainty in financial decisions under real exposure, and the incorporation of uncertainty into Bayesian inference.
+
+how it can be represented mathematically, how it is confronted in real decisions under exposure, and how statistical methods can incorporate it into inference.
+
+how agents form beliefs and make decisions when probabilities are not fully specified, how uncertainty appears in financial markets, and how statistical methods can account for it.
+
+how uncertainty is faced in real-time financial decision-making,
+
+
+How an agent behaviour under uncertainty can be modeled, how people actually behave under uncertainty and how statistical methods can accont for it.
+
+Before joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. This background shapes my interest in statistical methods for high-dimensional, uncertain, and decision-relevant environments.

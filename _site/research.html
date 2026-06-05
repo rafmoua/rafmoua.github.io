@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rafael M</title>
+<title>Research</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,12 +27,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -44,18 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -81,20 +64,26 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Rafael M</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -113,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rafael M</h1>
+<h1 class="title">Research</h1>
 </div>
 
 
@@ -130,33 +119,202 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I am a postdoctoral researcher at Inria working on Bayesian inference, model uncertainty, and statistical learning.</p>
-<p>My current research develops the <strong>Sources of Uncertainty</strong> framework, an extension of Bayesian inference that allows researchers to model different degrees of confidence across components of a probabilistic model. This perspective connects ideas from decision theory, generalized Bayes, variational inference, and modern machine learning.</p>
-<p>A central goal of my work is to develop Bayesian methods that remain useful when model uncertainty is not just a technical detail, but a core part of the problem. Recent applications include sparse Bayesian learning, global-local shrinkage methods, and self-pruning Bayesian neural networks.</p>
-<p>Before joining Inria, I completed a Ph.D.&nbsp;in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. This background shapes my interest in statistical methods for high-dimensional, uncertain, and decision-relevant environments.</p>
-<section id="research-areas" class="level2">
-<h2 class="anchored" data-anchor-id="research-areas">Research areas</h2>
-<ul>
-<li>Bayesian inference and generalized Bayes</li>
-<li>Model uncertainty and confidence modelling</li>
-<li>Variational inference</li>
-<li>Sparse Bayesian learning and global-local priors</li>
-<li>Bayesian neural networks and model selection</li>
-</ul>
+<section id="research" class="level1">
+<h1>Research</h1>
+<p>My current research develops the <strong>Sources of Uncertainty</strong> framework for Bayesian inference and explores its applications. The framework draws inspiration from decision-theoretic ideas about uncertainty.</p>
+<section id="sources-of-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-uncertainty">Sources of Uncertainty</h2>
+<p>Bayesian inference represents uncertainty through subjective probability distributions. The <strong>Sources of Uncertainty</strong> framework starts from the observation that the researcher may have different degrees of confidence in different parts of this probabilistic specification.</p>
+<p>The framework incorporates this distinction by associating each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also the degree of confidence assigned to each source of uncertainty.</p>
+<p>The confidence mechanism operates differently from standard prior informativeness, providing a new modelling lever and greater flexibility in how the posterior is shaped.</p>
 </section>
-<section id="selected-work" class="level2">
-<h2 class="anchored" data-anchor-id="selected-work">Selected work</h2>
-<p><strong>Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation</strong> Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen. arXiv preprint, 2026.</p>
-<p>This paper introduces the Sources of Uncertainty framework and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks.</p>
+<section id="sparse-bayesian-learning" class="level2">
+<h2 class="anchored" data-anchor-id="sparse-bayesian-learning">Sparse Bayesian learning</h2>
+<p>Building on the Sources of Uncertainty framework, I propose <strong>SoU-SGL</strong>, a sparsity-inducing Bayesian method based on global-local prior structures.</p>
+<p>While standard global-local priors mainly induce shrinkage, SoU-SGL uses source-specific confidence to push irrelevant components more sharply toward zero.</p>
 </section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Email: rafael.mouallem-rosa@inria.fr</p>
+<section id="bayesian-neural-networks" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-neural-networks">Bayesian neural networks</h2>
+<p>I apply these ideas to Bayesian neural networks, using structured sparsity to recover compact architectures.</p>
+<p>In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard deterministic neural networks while improving probabilistic performance.</p>
+<!--
+
+## Broader interests
+
+- Bayesian inference
+- Generalized Bayes
+- Variational inference
+- Model uncertainty
+- Sparse Bayesian learning
+- Bayesian neural networks
+- Decision-theoretic foundations of statistics
 
 
+# Research
+
+My research develops methodological tools for Bayesian inference and Bayesian machine learning. The central object in my current work is the **Sources of Uncertainty** framework, together with its applications to sparse Bayesian learning and Bayesian neural networks.
+
+Motivated by ideas from decision theory, this work treats confidence as an explicit modelling ingredient in Bayesian inference. The goal is to give researchers additional ways to design Bayesian models and control how information from data and prior components shapes the posterior.
+
+## Sources of Uncertainty
+
+I develop the **Sources of Uncertainty** framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.
+
+In standard Bayesian modelling, the prior distribution encodes probabilistic information before observing the data. Its specification affects not only where the posterior is pulled, but also how strongly the prior contributes to posterior regularisation.
+
+The SoU framework adds a separate layer: confidence. Each component of the prior can be paired with a confidence parameter, allowing the researcher to control how strongly that source of uncertainty enters the posterior update. This separates the probabilistic content of a prior component from the degree of confidence assigned to it.
+
+This additional degree of freedom creates a more flexible way to shape posterior behaviour and provides the basis for the sparsity and Bayesian neural network applications below.
+
+
+## Sources of Uncertainty
+
+As reasonable as it is to conceibe that under uncertainty one can form beliefs as subjective probability distributions, it is to think that the ability might be different regarding to different sources of uncertainty. Based on this observation we propose the SoU framework, wich allows the researcher to express not only her priors, but associate to each of the prior`s component her cofidence.
+
+In standard bayesian modeling the
+
+## Sources of Uncertainty
+
+It is natural in Bayesian inference to represent uncertainty through subjective probability distributions. It is also natural that the researcher may have different degrees of confidence in different parts of this probabilistic specification.
+
+The **Sources of Uncertainty** framework formalizes this idea by allowing each component of a factorized prior to be paired with a confidence parameter. In this way, the researcher specifies not only prior beliefs, but also how much confidence she assigns to each source of uncertainty.
+
+This adds a new modelling lever to Bayesian inference. Rather than changing only the prior distribution itself, the researcher can also control how strongly each prior component enters the posterior update. This additional flexibility provides the basis for the sparsity and Bayesian neural network applications below.
+
+## Sources of Uncertainty
+
+Bayesian inference represents uncertainty through subjective probability distributions. The **Sources of Uncertainty** framework starts from the observation that the researcher may have different degrees of confidence in different parts of this probabilistic specification.
+
+The framework formalizes this idea by pairing each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also how much confidence she assigns to each source of uncertainty.
+
+This additional modelling lever gives more flexibility in shaping the posterior and motivates the sparsity and Bayesian neural network applications below.
+
+The confidence mechanism is distinct from standard prior specification. While the prior encodes probabilistic information about each component, the confidence parameter controls how strongly that component constrains the posterior update. Separating these two roles gives the researcher an additional modelling lever for shaping posterior concentration and regularisation.
+
+This distinction separates prior informativeness from confidence. Prior informativeness controls how strongly the posterior is pulled toward the prior specification. Confidence, in contrast, provides an additional mechanism for controlling posterior concentration and regularisation. This gives the researcher a new modelling lever for shaping the posterior without changing only the prior distribution itself.
+
+## Sparse Bayesian learning
+
+Building on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.
+
+This leads to **SoU-SGL**, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero.
+
+
+## Bayesian neural networks
+
+I am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.
+
+Recent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance.
+
+
+In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. They also maintain competitive accuracy with standard neural networks while improving probabilistic performance, including calibration and negative log-likelihood.
+
+In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. The recovered architectures are substantially smaller than the overparameterized deterministic models, maintain competitive accuracy with standard neural networks, and improve probabilistic performance, including calibration and negative log-likelihood.
+
+In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. These recovered architectures are substantially smaller than the overparameterized deterministic models while maintaining competitive accuracy and improving probabilistic performance, including calibration and negative log-likelihood.
+
+## Bayesian neural networks
+
+I apply these ideas to Bayesian neural networks, where structured sparsity can be used to recover compact architectures from overparameterized models.
+
+In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. These recovered architectures are substantially smaller than the overparameterized deterministic models while maintaining competitive accuracy and improving probabilistic performance, including calibration and negative log-likelihood.
+
+## Bayesian neural networks
+
+I apply **SoU-SGL** to Bayesian neural networks as a mechanism for structured sparsity and self-pruning during training.
+
+In current work, this leads to **SoU-RHS**, a Bayesian structured-sparsity procedure for recovering compact architectures from overparameterized convolutional neural networks. Empirically, the method recovers architectures with similar total size and layer-wise allocation across different starting widths, while maintaining competitive predictive performance and improving probabilistic metrics such as calibration and negative log-likelihood.
+
+## Bayesian neural networks
+
+I apply **SoU-SGL** to Bayesian neural networks as a mechanism for self-pruning during training.
+
+Starting from overparameterized architectures, the method prunes redundant units through the sparsity induced by source-specific confidence. Empirically, this leads to compact architectures with competitive predictive performance.
+
+## Bayesian neural networks
+
+I apply **SoU-SGL** to Bayesian neural networks as a mechanism for self-pruning during training.
+
+The method starts from overparameterized architectures and uses the sparsity induced by source-specific confidence to remove redundant units. In this way, it can robustly recover compact architectures while maintaining competitive predictive performance.
+
+
+
+
+## Bayesian neural networks
+
+I apply these ideas to Bayesian neural networks through structured sparsity methods for compact architecture recovery.
+
+In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard neural networks while improving probabilistic performance.
+
+## Bayesian neural networks
+
+I apply these ideas to Bayesian neural networks, using structured sparsity to recover compact architectures.
+
+In current work on convolutional neural networks, the recovered architectures have similar total size and layer-wise allocation across different starting widths. They maintain competitive accuracy with standard neural networks while improving probabilistic performance.
+
+## Bayesian neural networks
+
+I apply these ideas to Bayesian neural networks, where structured sparsity can be used to recover compact architectures from overparameterized models.
+
+In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard neural networks while improving probabilistic performance.
+
+
+
+# Research
+
+My research develops methodological tools for Bayesian inference and Bayesian machine learning. The central object in my current work is the **Sources of Uncertainty** framework, together with its applications to sparse Bayesian learning and Bayesian neural networks.
+
+Motivated by ideas from decision theory, this work treats confidence as an explicit modelling ingredient in Bayesian inference. The goal is to give researchers additional ways to design Bayesian models and control how information from data and prior components shapes the posterior.
+
+My research develops Bayesian methods inspired by ideas from decision theory. My current work centers on the **Sources of Uncertainty** framework and explores its applications to sparse Bayesian learning and Bayesian neural networks.
+
+## Sources of Uncertainty
+
+The framework formalizes this idea by pairing each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also how much confidence she assigns to each source of uncertainty.
+
+
+-->
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
+<a class="mobile-profile-link" href="index.html">
+
+  <img src="images/profile2.jpg" alt="Rafael Mouallem Rosa">
+
+</a>
+
+
+
+<aside class="profile-sidebar">
+
+  <img src="images/profile2.jpg" alt="Rafael Mouallem Rosa">
+
+
+
+  <div class="profile-name">Rafael Mouallem Rosa</div>
+
+  <div class="profile-role">Postdoctoral Researcher</div>
+
+  <div class="profile-affiliation">Inria, Statify team</div>
+
+  <div class="profile-location">Grenoble, France</div>
+
+
+
+  <div class="profile-links">
+
+    <a href="mailto:rafael.mouallem-rosa@inria.fr">Email</a>
+
+    <span>·</span>
+
+    <a href="files/CV_Rafael_Mouallem_Rosa.pdf">CV</a>
+
+  </div>
+
+</aside>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
