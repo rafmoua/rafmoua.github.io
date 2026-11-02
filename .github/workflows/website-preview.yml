@@ -1,0 +1,36 @@
+name: Website preview
+
+on:
+  push:
+    branches:
+      - work/website-redesign-2026
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: website-preview
+  cancel-in-progress: true
+
+jobs:
+  render-and-publish-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website source
+        uses: actions/checkout@v4
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render website
+        run: quarto render
+
+      - name: Publish to preview subdirectory
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_site
+          destination_dir: preview
+          keep_files: true
