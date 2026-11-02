@@ -126,3 +126,10 @@
     display: inline-block !important;
   }
 }
+
+/* Contact is in the menu only when the profile sidebar is hidden. */
+@media (min-width: 1200px) {
+  .navbar .nav-item:has(> a.nav-link[href^="mailto:"]) {
+    display: none;
+  }
+}

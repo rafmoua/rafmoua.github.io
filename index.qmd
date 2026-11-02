@@ -6,6 +6,6 @@ title: "Rafael Mouallem Rosa"
 
 I am a researcher at Inria, in the Statify team in Grenoble, France, working on Bayesian inference.
 
-My current research centers on the **Sources of Uncertainty (SoU)** framework, which introduces confidence as an additional dimension of Bayesian inference, enabling the selective probabilistic treatment of different sources of uncertainty within a model. I explore its applications to statistical learning and macroeconometrics.
+My current research centers on the [**Sources of Uncertainty (SoU)**](https://arxiv.org/abs/2605.03134) framework, which introduces confidence as an additional dimension of Bayesian inference, enabling the selective probabilistic treatment of different sources of uncertainty within a model. I explore its applications to statistical learning and macroeconometrics.
 
 Before joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic study of choices under uncertainty, confronting uncertainty in financial markets, and modelling uncertainty in Bayesian statistical learning.

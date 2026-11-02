@@ -16,6 +16,8 @@ website:
         text: Publications
       - href: cv.qmd
         text: CV
+      - href: "mailto:rafael.mouallem-rosa@inria.fr"
+        text: Email
 
 format:
   html:
