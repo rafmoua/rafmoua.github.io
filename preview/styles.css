@@ -1,0 +1,203 @@
+/* Desktop profile sidebar */
+
+.profile-sidebar {
+  position: fixed;
+  top: 105px;
+  left: max(1.5rem, calc((100vw - 900px) / 2 - 230px));
+  width: 185px;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: #333;
+  z-index: 1000;
+}
+
+.profile-sidebar img {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.profile-name {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.profile-role,
+.profile-affiliation,
+.profile-location {
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+
+.profile-links {
+  margin-top: 0.8rem;
+}
+
+.profile-links a {
+  text-decoration: none;
+}
+
+/* Mobile profile photo */
+
+.mobile-profile-link {
+  display: none;
+}
+
+/* Hide Quarto navbar logo if it still exists */
+.navbar-logo {
+  display: none;
+}
+
+/* Mobile/tablet layout */
+
+@media (max-width: 1199px) {
+  .profile-sidebar {
+    display: none;
+  }
+
+  .mobile-profile-link {
+    display: block;
+    position: fixed;
+    top: 9px;
+    left: 70px;
+    z-index: 2000;
+  }
+
+  .mobile-profile-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+/* Desktop layout */
+
+@media (min-width: 1200px) {
+  .mobile-profile-link {
+    display: none;
+  }
+}
+
+/* Keep Quarto navbar visible on mobile scroll */
+
+@media (max-width: 1199px) {
+  header#quarto-header,
+  header#quarto-header.headroom,
+  header#quarto-header.headroom--pinned,
+  header#quarto-header.headroom--unpinned,
+  .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1990 !important;
+    transform: none !important;
+  }
+
+  body {
+    padding-top: 56px;
+  }
+
+  .mobile-profile-link {
+    display: block;
+    position: fixed;
+    top: 9px;
+    left: 70px;
+    z-index: 2000;
+  }
+
+  .mobile-profile-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-sidebar {
+    display: none;
+  }
+}
+
+
+/* Hide Quarto automatic page title block */
+.quarto-title-block {
+  display: none;
+}
+
+
+
+.cv-download-block a {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: inherit;
+  background: transparent;
+}
+
+.cv-download-block a:hover {
+  background: #f5f5f5;
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .cv-download-block {
+    display: block;
+    margin: 0.5rem 0 1.75rem 0;
+  }
+
+  .cv-download-block a {
+    display: inline-block;
+  }
+}
+
+
+/* Make top content visible below fixed mobile navbar */
+
+@media (max-width: 1199px) {
+  main.content {
+    padding-top: 3.25rem;
+  }
+
+  .cv-download-block {
+    display: block !important;
+    visibility: visible !important;
+    margin: 0.75rem 0 1.75rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cv-download-block a {
+    display: inline-block !important;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid #bbb;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: inherit;
+    background: transparent;
+  }
+}
+
+@media (max-width: 1199px) {
+  #quarto-content,
+  main#quarto-document-content,
+  .page-columns {
+    padding-top: 30px !important;
+  }
+
+  .cv-download-block {
+    display: block !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.75rem !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+}
