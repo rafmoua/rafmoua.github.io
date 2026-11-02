@@ -2,10 +2,8 @@
 title: "CV"
 ---
 
-# Curriculum Vitae
-
 <div class="cv-download-block">
-  <a href="files/CV_Rafael_Mouallem_Rosa.pdf">Download full CV (PDF)</a>
+  <a href="files/CV_Rafael_Mouallem_Rosa.pdf">Download CV (PDF)</a>
 </div>
 
 ## Academic Positions
