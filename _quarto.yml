@@ -1,12 +1,11 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-#  title: "Rafael Mouallem Rosa"
+  site-url: "https://rafmoua.github.io"
   search: false
   navbar:
-#    logo: images/profile2.jpg
-#    logo: images/profile2.jpg
     pinned: true
     left:
       - href: index.qmd
@@ -17,8 +16,6 @@ website:
         text: Publications
       - href: cv.qmd
         text: CV
-#      - href: contact.qmd
-#        text: Contact
 
 format:
   html:

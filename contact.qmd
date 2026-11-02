@@ -1,9 +1,0 @@
----
-title: "Contact"
----
-
-**Email:** rafael.mouallem-rosa@inria.fr
-
-**Location:** Grenoble, France
-
-**Affiliation:** Inria, Statify team
