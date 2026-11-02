@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -30,14 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b0bacdaee50ff9abb97ae013f25660d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -58,13 +62,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -98,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -119,161 +123,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="research" class="level1">
-<h1>Research</h1>
-<p>My current research develops the <strong>Sources of Uncertainty</strong> framework for Bayesian inference and explores its applications. The framework draws inspiration from decision-theoretic ideas about uncertainty.</p>
-<section id="sources-of-uncertainty" class="level2">
-<h2 class="anchored" data-anchor-id="sources-of-uncertainty">Sources of Uncertainty</h2>
-<p>Bayesian inference represents uncertainty through subjective probability distributions. The <strong>Sources of Uncertainty</strong> framework starts from the observation that the researcher may have different degrees of confidence in different parts of this probabilistic specification.</p>
-<p>The framework incorporates this distinction by associating each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also the degree of confidence assigned to each source of uncertainty.</p>
-<p>The confidence mechanism operates differently from standard prior informativeness, providing a new modelling lever and greater flexibility in how the posterior is shaped.</p>
+<section id="sources-of-uncertainty" class="level1">
+<h1>Sources of Uncertainty</h1>
+<p>The <strong>Sources of Uncertainty (SoU)</strong> framework extends Bayesian inference by allowing researchers to express different levels of confidence in distinct sources of uncertainty within a model. This enables a <strong>selective probabilistic treatment of model components</strong>, controlling how uncertainty associated with each component is retained and propagated. As a particular case, some components can retain the standard Bayesian treatment while others approach optimization, with empirical Bayes and profiling emerging as limiting cases.</p>
+<p>Confidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.</p>
+<section id="macroeconometrics" class="level2">
+<h2 class="anchored" data-anchor-id="macroeconometrics">Macroeconometrics</h2>
+<p>In macroeconometrics, I develop <strong>SoU-BVARs</strong>, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.</p>
+<p>I evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.</p>
 </section>
-<section id="sparse-bayesian-learning" class="level2">
-<h2 class="anchored" data-anchor-id="sparse-bayesian-learning">Sparse Bayesian learning</h2>
-<p>Building on the Sources of Uncertainty framework, I propose <strong>SoU-SGL</strong>, a sparsity-inducing Bayesian method based on global-local prior structures.</p>
-<p>While standard global-local priors mainly induce shrinkage, SoU-SGL uses source-specific confidence to push irrelevant components more sharply toward zero.</p>
-</section>
-<section id="bayesian-neural-networks" class="level2">
-<h2 class="anchored" data-anchor-id="bayesian-neural-networks">Bayesian neural networks</h2>
-<p>I apply these ideas to Bayesian neural networks, using structured sparsity to recover compact architectures.</p>
-<p>In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard deterministic neural networks while improving probabilistic performance.</p>
-<!--
-
-## Broader interests
-
-- Bayesian inference
-- Generalized Bayes
-- Variational inference
-- Model uncertainty
-- Sparse Bayesian learning
-- Bayesian neural networks
-- Decision-theoretic foundations of statistics
-
-
-# Research
-
-My research develops methodological tools for Bayesian inference and Bayesian machine learning. The central object in my current work is the **Sources of Uncertainty** framework, together with its applications to sparse Bayesian learning and Bayesian neural networks.
-
-Motivated by ideas from decision theory, this work treats confidence as an explicit modelling ingredient in Bayesian inference. The goal is to give researchers additional ways to design Bayesian models and control how information from data and prior components shapes the posterior.
-
-## Sources of Uncertainty
-
-I develop the **Sources of Uncertainty** framework, which extends Bayesian inference by assigning confidence parameters to different components of a probabilistic model.
-
-In standard Bayesian modelling, the prior distribution encodes probabilistic information before observing the data. Its specification affects not only where the posterior is pulled, but also how strongly the prior contributes to posterior regularisation.
-
-The SoU framework adds a separate layer: confidence. Each component of the prior can be paired with a confidence parameter, allowing the researcher to control how strongly that source of uncertainty enters the posterior update. This separates the probabilistic content of a prior component from the degree of confidence assigned to it.
-
-This additional degree of freedom creates a more flexible way to shape posterior behaviour and provides the basis for the sparsity and Bayesian neural network applications below.
-
-
-## Sources of Uncertainty
-
-As reasonable as it is to conceibe that under uncertainty one can form beliefs as subjective probability distributions, it is to think that the ability might be different regarding to different sources of uncertainty. Based on this observation we propose the SoU framework, wich allows the researcher to express not only her priors, but associate to each of the prior`s component her cofidence.
-
-In standard bayesian modeling the
-
-## Sources of Uncertainty
-
-It is natural in Bayesian inference to represent uncertainty through subjective probability distributions. It is also natural that the researcher may have different degrees of confidence in different parts of this probabilistic specification.
-
-The **Sources of Uncertainty** framework formalizes this idea by allowing each component of a factorized prior to be paired with a confidence parameter. In this way, the researcher specifies not only prior beliefs, but also how much confidence she assigns to each source of uncertainty.
-
-This adds a new modelling lever to Bayesian inference. Rather than changing only the prior distribution itself, the researcher can also control how strongly each prior component enters the posterior update. This additional flexibility provides the basis for the sparsity and Bayesian neural network applications below.
-
-## Sources of Uncertainty
-
-Bayesian inference represents uncertainty through subjective probability distributions. The **Sources of Uncertainty** framework starts from the observation that the researcher may have different degrees of confidence in different parts of this probabilistic specification.
-
-The framework formalizes this idea by pairing each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also how much confidence she assigns to each source of uncertainty.
-
-This additional modelling lever gives more flexibility in shaping the posterior and motivates the sparsity and Bayesian neural network applications below.
-
-The confidence mechanism is distinct from standard prior specification. While the prior encodes probabilistic information about each component, the confidence parameter controls how strongly that component constrains the posterior update. Separating these two roles gives the researcher an additional modelling lever for shaping posterior concentration and regularisation.
-
-This distinction separates prior informativeness from confidence. Prior informativeness controls how strongly the posterior is pulled toward the prior specification. Confidence, in contrast, provides an additional mechanism for controlling posterior concentration and regularisation. This gives the researcher a new modelling lever for shaping the posterior without changing only the prior distribution itself.
-
-## Sparse Bayesian learning
-
-Building on the Sources of Uncertainty framework, I study sparsity-inducing Bayesian methods based on global-local prior structures.
-
-This leads to **SoU-SGL**, a sparse global-local estimator designed to recover sparse representations rather than merely shrink parameters toward zero.
-
-
-## Bayesian neural networks
-
-I am also interested in Bayesian deep learning, especially methods that allow neural networks to adapt their effective architecture to the data.
-
-Recent work applies the SoU framework to Bayesian neural networks, where it induces self-pruning and can lead to compact architectures without sacrificing predictive performance.
-
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. They also maintain competitive accuracy with standard neural networks while improving probabilistic performance, including calibration and negative log-likelihood.
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. The recovered architectures are substantially smaller than the overparameterized deterministic models, maintain competitive accuracy with standard neural networks, and improve probabilistic performance, including calibration and negative log-likelihood.
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. These recovered architectures are substantially smaller than the overparameterized deterministic models while maintaining competitive accuracy and improving probabilistic performance, including calibration and negative log-likelihood.
-
-## Bayesian neural networks
-
-I apply these ideas to Bayesian neural networks, where structured sparsity can be used to recover compact architectures from overparameterized models.
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different initial widths. These recovered architectures are substantially smaller than the overparameterized deterministic models while maintaining competitive accuracy and improving probabilistic performance, including calibration and negative log-likelihood.
-
-## Bayesian neural networks
-
-I apply **SoU-SGL** to Bayesian neural networks as a mechanism for structured sparsity and self-pruning during training.
-
-In current work, this leads to **SoU-RHS**, a Bayesian structured-sparsity procedure for recovering compact architectures from overparameterized convolutional neural networks. Empirically, the method recovers architectures with similar total size and layer-wise allocation across different starting widths, while maintaining competitive predictive performance and improving probabilistic metrics such as calibration and negative log-likelihood.
-
-## Bayesian neural networks
-
-I apply **SoU-SGL** to Bayesian neural networks as a mechanism for self-pruning during training.
-
-Starting from overparameterized architectures, the method prunes redundant units through the sparsity induced by source-specific confidence. Empirically, this leads to compact architectures with competitive predictive performance.
-
-## Bayesian neural networks
-
-I apply **SoU-SGL** to Bayesian neural networks as a mechanism for self-pruning during training.
-
-The method starts from overparameterized architectures and uses the sparsity induced by source-specific confidence to remove redundant units. In this way, it can robustly recover compact architectures while maintaining competitive predictive performance.
-
-
-
-
-## Bayesian neural networks
-
-I apply these ideas to Bayesian neural networks through structured sparsity methods for compact architecture recovery.
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard neural networks while improving probabilistic performance.
-
-## Bayesian neural networks
-
-I apply these ideas to Bayesian neural networks, using structured sparsity to recover compact architectures.
-
-In current work on convolutional neural networks, the recovered architectures have similar total size and layer-wise allocation across different starting widths. They maintain competitive accuracy with standard neural networks while improving probabilistic performance.
-
-## Bayesian neural networks
-
-I apply these ideas to Bayesian neural networks, where structured sparsity can be used to recover compact architectures from overparameterized models.
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard neural networks while improving probabilistic performance.
-
-
-
-# Research
-
-My research develops methodological tools for Bayesian inference and Bayesian machine learning. The central object in my current work is the **Sources of Uncertainty** framework, together with its applications to sparse Bayesian learning and Bayesian neural networks.
-
-Motivated by ideas from decision theory, this work treats confidence as an explicit modelling ingredient in Bayesian inference. The goal is to give researchers additional ways to design Bayesian models and control how information from data and prior components shapes the posterior.
-
-My research develops Bayesian methods inspired by ideas from decision theory. My current work centers on the **Sources of Uncertainty** framework and explores its applications to sparse Bayesian learning and Bayesian neural networks.
-
-## Sources of Uncertainty
-
-The framework formalizes this idea by pairing each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also how much confidence she assigns to each source of uncertainty.
-
-
--->
+<section id="sparse-learning" class="level2">
+<h2 class="anchored" data-anchor-id="sparse-learning">Sparse Learning</h2>
+<p>In sparse Bayesian learning, I develop <strong>SoU-SGL</strong>, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an <strong>“optimize structure, infer parameters”</strong> approach.</p>
+<p>I apply this mechanism to Bayesian neural networks through <strong>SoU-RHS</strong>, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings.</p>
 
 
 </section>
@@ -281,39 +143,22 @@ The framework formalizes this idea by pairing each component of a factorized pri
 
 </main> <!-- /main -->
 <a class="mobile-profile-link" href="index.html">
-
   <img src="images/profile2.jpg" alt="Rafael Mouallem Rosa">
-
 </a>
 
-
-
 <aside class="profile-sidebar">
-
   <img src="images/profile2.jpg" alt="Rafael Mouallem Rosa">
 
-
-
   <div class="profile-name">Rafael Mouallem Rosa</div>
-
-  <div class="profile-role">Postdoctoral Researcher</div>
-
+  <div class="profile-role">Researcher</div>
   <div class="profile-affiliation">Inria, Statify team</div>
-
   <div class="profile-location">Grenoble, France</div>
 
-
-
   <div class="profile-links">
-
     <a href="mailto:rafael.mouallem-rosa@inria.fr">Email</a>
-
     <span>·</span>
-
     <a href="files/CV_Rafael_Mouallem_Rosa.pdf">CV</a>
-
   </div>
-
 </aside>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -388,12 +233,13 @@ The framework formalizes this idea by pairing each component of a factorized pri
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rafmoua\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/rafmoua\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -402,8 +248,69 @@ The framework formalizes this idea by pairing each component of a factorized pri
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -417,6 +324,7 @@ The framework formalizes this idea by pairing each component of a factorized pri
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -579,44 +487,54 @@ The framework formalizes this idea by pairing each component of a factorized pri
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -714,6 +632,9 @@ The framework formalizes this idea by pairing each component of a factorized pri
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 
