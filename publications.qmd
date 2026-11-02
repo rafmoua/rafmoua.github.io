@@ -21,7 +21,7 @@ Manuscript.
 ## Economics and Decision Theory
 
 **SoU-BVARs: Adapting Inference about Macroeconomic Relationships**  
-Rafael Mouallem Rosa and Julyan Arbel (2026).  
+Rafael Mouallem Rosa (2026).  
 Manuscript.
 
 **Complete markets with bankruptcy risk and pecuniary default punishments**  
