@@ -4,29 +4,26 @@ title: "Rafael Mouallem Rosa"
 
 # Rafael Mouallem Rosa
 
-I am a postdoctoral researcher at Inria working on Bayesian inference and Bayesian machine learning.
+I am a **researcher at Inria**, in the Statify team in Grenoble, France. My research is in Bayesian statistics, with applications to statistical learning and macroeconomics.
 
-My research centers on the **Sources of Uncertainty** framework, which extends Bayesian inference by allowing different components of a probabilistic model to be associated with different levels of confidence. I use this framework to study sparsity-inducing Bayesian methods, with current applications to Bayesian neural networks.
+My current work develops the **Sources of Uncertainty (SoU)** framework for Bayesian inference. SoU allows different components of a statistical model to be assigned different levels of confidence, providing a way to control their probabilistic treatment and how uncertainty is propagated across the model. This flexibility offers a new tool for Bayesian model design.
 
-Before joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic representation of agents’ choices under uncertainty, real confrontation with uncertainty in financial markets, and the modelling of uncertainty in Bayesian statistical learning.
+I explore applications of this framework to sparse estimation and model selection, Bayesian neural networks, and macroeconomic inference. I hold a Ph.D. in Economics from the São Paulo School of Economics (FGV), was a visiting scholar in the Department of Economics at Harvard University, and previously worked in quantitative finance.
 
-## Selected work
+## Selected research
 
-**Bayesian inference with sources of uncertainty: from confidence modelling to sparse estimation**
-Rafael Mouallem Rosa, Julyan Arbel, Hien Duy Nguyen.
-arXiv preprint, 2026.
-[[arXiv](https://arxiv.org/abs/2605.03134)]
+**Empowering Bayes with sources of uncertainty: from confidence modelling to sparse estimation**  
+Rafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026). Working paper.  
+[arXiv (earlier version)](https://arxiv.org/abs/2605.03134) · [Code](https://github.com/rafmoua/sou-paper)
 
-Introduces the Sources of Uncertainty framework for Bayesian inference and develops SoU-SGL, a sparsity-inducing Bayesian method with applications to linear regression, logistic regression, and Bayesian neural networks.
+Introduces the SoU framework, studies its connections to empirical Bayes and profiling, and develops a general approach to sparse estimation, illustrated in regression and Bayesian neural networks.
 
+**SoU-BVARs: Adapting Inference about Macroeconomic Relationships**  
+Rafael Mouallem Rosa (2026). Manuscript.
 
-<!--
-## Contact
+An application of the SoU approach to Bayesian vector autoregressions and the analysis of macroeconomic relationships.
 
-Email: rafael.mouallem-rosa@inria.fr
+**SoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs**  
+Rafael Mouallem Rosa and Julyan Arbel (2026). Manuscript.
 
-
-
-I currently explore applications of this framework to Bayesian inference, with a particular focus on Bayesian neural networks.
--->
-
+Develops structured Bayesian sparsity at the filter level to recover compact convolutional neural network architectures.
