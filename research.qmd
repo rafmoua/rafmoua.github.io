@@ -2,19 +2,11 @@
 title: "Research"
 ---
 
-# Research
+# Sources of Uncertainty
 
-My current research develops the **Sources of Uncertainty** framework for Bayesian inference and explores its applications. The framework draws inspiration from decision-theoretic ideas about uncertainty.
+The **Sources of Uncertainty (SoU)** framework extends Bayesian inference by allowing researchers to express different levels of confidence in distinct sources of uncertainty within a model. This enables a **selective probabilistic treatment of model components**, controlling how uncertainty associated with each component is retained and propagated. As a particular case, some components can retain the standard Bayesian treatment while others approach optimization, with empirical Bayes and profiling emerging as limiting cases.
 
-
-## Sources of Uncertainty
-
-Bayesian inference represents uncertainty through subjective probability distributions. The **Sources of Uncertainty** framework starts from the observation that the researcher may have different degrees of confidence in different parts of this probabilistic specification.
-
-The framework incorporates this distinction by associating each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also the degree of confidence assigned to each source of uncertainty.
-
-The confidence mechanism operates differently from standard prior informativeness, providing a new modelling lever and greater flexibility in how the posterior is shaped.
-
+Confidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.
 
 ## Sparse Bayesian learning
 
