@@ -123,15 +123,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="research" class="level1">
-<h1>Research</h1>
-<p>My current research develops the <strong>Sources of Uncertainty</strong> framework for Bayesian inference and explores its applications. The framework draws inspiration from decision-theoretic ideas about uncertainty.</p>
-<section id="sources-of-uncertainty" class="level2">
-<h2 class="anchored" data-anchor-id="sources-of-uncertainty">Sources of Uncertainty</h2>
-<p>Bayesian inference represents uncertainty through subjective probability distributions. The <strong>Sources of Uncertainty</strong> framework starts from the observation that the researcher may have different degrees of confidence in different parts of this probabilistic specification.</p>
-<p>The framework incorporates this distinction by associating each component of a factorized prior with a confidence parameter. This allows the researcher to specify not only prior beliefs, but also the degree of confidence assigned to each source of uncertainty.</p>
-<p>The confidence mechanism operates differently from standard prior informativeness, providing a new modelling lever and greater flexibility in how the posterior is shaped.</p>
-</section>
+<section id="sources-of-uncertainty" class="level1">
+<h1>Sources of Uncertainty</h1>
+<p>The <strong>Sources of Uncertainty (SoU)</strong> framework extends Bayesian inference by allowing researchers to express different levels of confidence in distinct sources of uncertainty within a model. This enables a <strong>selective probabilistic treatment of model components</strong>, controlling how uncertainty associated with each component is retained and propagated. As a particular case, some components can retain the standard Bayesian treatment while others approach optimization, with empirical Bayes and profiling emerging as limiting cases.</p>
+<p>Confidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.</p>
 <section id="sparse-bayesian-learning" class="level2">
 <h2 class="anchored" data-anchor-id="sparse-bayesian-learning">Sparse Bayesian learning</h2>
 <p>Building on the Sources of Uncertainty framework, I propose <strong>SoU-SGL</strong>, a sparsity-inducing Bayesian method based on global-local prior structures.</p>
