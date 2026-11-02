@@ -15,18 +15,11 @@ In macroeconometrics, I develop **SoU-BVARs**, which allow confidence in estimat
 
 I evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.
 
-## Sparse Bayesian learning
+## Sparse Learning
 
-Building on the Sources of Uncertainty framework, I propose **SoU-SGL**, a sparsity-inducing Bayesian method based on global-local prior structures.
+In sparse Bayesian learning, I develop **SoU-SGL**, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an **“optimize structure, infer parameters”** approach.
 
-While standard global-local priors mainly induce shrinkage, SoU-SGL uses source-specific confidence to push irrelevant components more sharply toward zero.
-
-
-## Bayesian neural networks
-
-I apply these ideas to Bayesian neural networks, using structured sparsity to recover compact architectures.
-
-In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard deterministic neural networks while improving probabilistic performance.
+I apply this mechanism to Bayesian neural networks through **SoU-RHS**, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings.
 
 <!--
 
