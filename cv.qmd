@@ -5,74 +5,34 @@ title: "CV"
 # Curriculum Vitae
 
 <div class="cv-download-block">
-  <a href="files/CV_Rafael_Mouallem_Rosa.pdf">Download CV (PDF)</a>
+  <a href="files/CV_Rafael_Mouallem_Rosa.pdf">Download full CV (PDF)</a>
 </div>
 
-## Current Research
-
-My current research develops the Sources of Uncertainty framework for Bayesian inference and explores its applications, with a particular interest in macroeconomics and finance.
-
-## Academic Employment
+## Academic Positions
 
 **Inria, Statify team** — Grenoble, France
 
-- Researcher, 2026–present
-- Postdoctoral Researcher, 2024–2026
+Researcher, 2026–present  
+Postdoctoral Researcher, 2024–2026
 
 ## Education
 
-**Ph.D. in Economics**, São Paulo School of Economics, Fundação Getulio Vargas (2015–2019)  
-Advisor: Victor Filipe Martins-da-Rocha
+**Ph.D. in Economics** — São Paulo School of Economics, Fundação Getulio Vargas (FGV)  
+2019
 
-**Visiting Scholar**, Harvard University, Department of Economics (2018–2019)  
-Host: Tomasz Strzalecki
+**Visiting Scholar** — Harvard University, Department of Economics  
+2018–2019
 
-**M.S. in Economics**, São Paulo School of Economics, Fundação Getulio Vargas (2013–2015)
+**M.S. in Economics** — São Paulo School of Economics, Fundação Getulio Vargas (FGV)  
+2015
 
-**B.S. in Economics**, PUC-SP (2005–2010)
+**B.S. in Economics** — PUC-SP  
+2010
 
-## Industry Experience
+## Previous Industry Experience
 
-**Safra Asset Management** — São Paulo, Brazil  
-Quantitative Portfolio Manager (2020–2022)
+**Quantitative Portfolio Manager** — Safra Asset Management  
+2020–2022
 
-- Designed and implemented quantitative trading strategies in futures and equities.
-- Built research-to-production workflows for signal construction, backtesting, and risk monitoring.
-
-**Macro Capital Asset Management** — São Paulo, Brazil  
-Partner and Economist (2019–2020)
-
-- Developed macro-finance quantitative models for investment decisions and scenario analysis.
-
-**Brasil Capital Asset Management** — São Paulo, Brazil  
-Analyst (2010–2011)
-
-**Votorantim Bank** — São Paulo, Brazil  
-Intern (2009–2010)
-
-## Teaching
-
-**São Paulo School of Economics, Fundação Getulio Vargas** — São Paulo, Brazil  
-Instructor, Probability, undergraduate course (2016)
-
-## Conference Presentations
-
-- **Empowering Bayes with Sources of Uncertainty: From Confidence Modelling to Structured Sparsity in Neural Networks.** ISBA 2026 World Meeting, Bayesian Deep Learning session, Nagoya, Japan. Oral presentation.
-- **Empowering Bayes with Sources of Uncertainty.** The 4th Bayes-Duality Workshop, Tokyo, Japan. Poster presentation.
-
-## Professional Service
-
-Referee: *Bayesian Analysis*.
-
-## Awards and Scholarships
-
-- CAPES PDSE Scholarship, Doctorate Abroad, Harvard University (2018–2019)
-- CAPES Scholarship, Ph.D. in Economics, FGV (2015–2019)
-- VII INFI–FEBRABAN Award, 3rd place, Category A (2015)
-- CAPES Scholarship, M.S. in Economics, FGV (2013–2014)
-
-## Technical Skills
-
-Python, R, MATLAB, LaTeX
-
-For research papers, see [Publications and Manuscripts](publications.qmd).
+**Partner and Economist** — Macro Capital Asset Management  
+2019–2020
