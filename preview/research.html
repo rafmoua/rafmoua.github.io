@@ -132,15 +132,10 @@ ul.task-list li input[type="checkbox"] {
 <p>In macroeconometrics, I develop <strong>SoU-BVARs</strong>, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.</p>
 <p>I evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.</p>
 </section>
-<section id="sparse-bayesian-learning" class="level2">
-<h2 class="anchored" data-anchor-id="sparse-bayesian-learning">Sparse Bayesian learning</h2>
-<p>Building on the Sources of Uncertainty framework, I propose <strong>SoU-SGL</strong>, a sparsity-inducing Bayesian method based on global-local prior structures.</p>
-<p>While standard global-local priors mainly induce shrinkage, SoU-SGL uses source-specific confidence to push irrelevant components more sharply toward zero.</p>
-</section>
-<section id="bayesian-neural-networks" class="level2">
-<h2 class="anchored" data-anchor-id="bayesian-neural-networks">Bayesian neural networks</h2>
-<p>I apply these ideas to Bayesian neural networks, using structured sparsity to recover compact architectures.</p>
-<p>In current work on convolutional neural networks, the procedure identifies compact architectures with similar total size and layer-wise allocation across different starting widths. These architectures maintain competitive accuracy with standard deterministic neural networks while improving probabilistic performance.</p>
+<section id="sparse-learning" class="level2">
+<h2 class="anchored" data-anchor-id="sparse-learning">Sparse Learning</h2>
+<p>In sparse Bayesian learning, I develop <strong>SoU-SGL</strong>, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an <strong>“optimize structure, infer parameters”</strong> approach.</p>
+<p>I apply this mechanism to Bayesian neural networks through <strong>SoU-RHS</strong>, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings.</p>
 <!--
 
 ## Broader interests
