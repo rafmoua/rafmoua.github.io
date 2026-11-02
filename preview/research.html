@@ -127,6 +127,11 @@ ul.task-list li input[type="checkbox"] {
 <h1>Sources of Uncertainty</h1>
 <p>The <strong>Sources of Uncertainty (SoU)</strong> framework extends Bayesian inference by allowing researchers to express different levels of confidence in distinct sources of uncertainty within a model. This enables a <strong>selective probabilistic treatment of model components</strong>, controlling how uncertainty associated with each component is retained and propagated. As a particular case, some components can retain the standard Bayesian treatment while others approach optimization, with empirical Bayes and profiling emerging as limiting cases.</p>
 <p>Confidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.</p>
+<section id="macroeconometrics" class="level2">
+<h2 class="anchored" data-anchor-id="macroeconometrics">Macroeconometrics</h2>
+<p>In macroeconometrics, I develop <strong>SoU-BVARs</strong>, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.</p>
+<p>I evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.</p>
+</section>
 <section id="sparse-bayesian-learning" class="level2">
 <h2 class="anchored" data-anchor-id="sparse-bayesian-learning">Sparse Bayesian learning</h2>
 <p>Building on the Sources of Uncertainty framework, I propose <strong>SoU-SGL</strong>, a sparsity-inducing Bayesian method based on global-local prior structures.</p>
