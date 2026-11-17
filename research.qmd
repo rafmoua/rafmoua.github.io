@@ -30,10 +30,7 @@ I apply this mechanism to Bayesian neural networks through **SoU-RHS**, combinin
 **SoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs**  
 Rafael Mouallem Rosa and Julyan Arbel (2026). *Submitted*.
 
-**Bayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity**  
-Rafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026). Accepted workshop paper, [OPTIMAL (AISTATS 2026 Workshop)](https://optimal-workshop26.github.io/).
-
-**Presentation:** *Empowering Bayes with Sources of Uncertainty: From Confidence Modelling to Structured Sparsity in Neural Networks*. [ISBA 2026 World Meeting](https://events.conf.app/event/fe1bf927-baa2-4933-9e99-2efcafa0fcdd/agenda/5da2945c-4727-474b-898f-4cf37366b54a), Bayesian Deep Learning session, Nagoya, Japan (2026). *Oral presentation*.
+*Related academic activities:* [OPTIMAL workshop paper](https://optimal-workshop26.github.io/) (AISTATS 2026) · [ISBA 2026 oral presentation](https://events.conf.app/event/fe1bf927-baa2-4933-9e99-2efcafa0fcdd/agenda/5da2945c-4727-474b-898f-4cf37366b54a).
 
 ## Earlier Research
 
