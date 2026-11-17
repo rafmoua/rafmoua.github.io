@@ -8,6 +8,9 @@ The **Sources of Uncertainty (SoU)** framework extends Bayesian inference by all
 
 Confidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.
 
+[**Empowering Bayes with sources of uncertainty: from confidence modelling to sparse estimation**](https://arxiv.org/abs/2605.03134)  
+Rafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026). *Submitted*. [Code](https://github.com/rafmoua/sou-paper).
+
 
 ## Macroeconometrics
 
@@ -15,8 +18,30 @@ In macroeconometrics, I develop **SoU-BVARs**, which use relationship-specific c
 
 In an expanding-window forecasting exercise with U.S. macroeconomic data, SoU-BVARs improve average point and probabilistic forecast accuracy relative to standard Bayesian inference across all BVAR specifications considered, including models with stochastic volatility and heavy-tailed innovations. The method also outperforms a comparable adaptation of prior informativeness. In the larger VAR system, assigning confidence at the relationship level yields greater predictive gains than assigning it at the equation or system level.
 
+**SoU-BVARs: Adapting Inference about Macroeconomic Relationships**  
+Rafael Mouallem Rosa (2026). *Working paper*.
+
 ## Sparse Learning
 
 In sparse Bayesian learning, I develop **SoU-SGL**, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an **“optimize structure, infer parameters”** approach.
 
 I apply this mechanism to Bayesian neural networks through **SoU-RHS**, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings.
+
+**SoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs**  
+Rafael Mouallem Rosa and Julyan Arbel (2026). *Submitted*.
+
+**Bayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity**  
+Rafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026). Accepted workshop paper, [OPTIMAL (AISTATS 2026 Workshop)](https://optimal-workshop26.github.io/).
+
+**Presentation:** *Empowering Bayes with Sources of Uncertainty: From Confidence Modelling to Structured Sparsity in Neural Networks*. [ISBA 2026 World Meeting](https://events.conf.app/event/fe1bf927-baa2-4933-9e99-2efcafa0fcdd/agenda/5da2945c-4727-474b-898f-4cf37366b54a), Bayesian Deep Learning session, Nagoya, Japan (2026). *Oral presentation*.
+
+## Earlier Research
+
+[**Complete markets with bankruptcy risk and pecuniary default punishments**](https://link.springer.com/article/10.1007/s00199-022-01429-1)  
+Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2023). *Economic Theory*, 75(3), 625–640.
+
+[**Second-Order Beliefs and Second-Order Expected Utility**](https://hal.science/hal-02922263/)  
+Victor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2020). HAL preprint.
+
+[**Investment-specific technological change and the Brazilian macroeconomy**](https://bibliotecadigital.fgv.br/ojs/index.php/bre/article/view/57675)  
+Vladimir Kuhl Teles, Carlos Júnior, and Rafael Mouallem Rosa (2015). *Brazilian Review of Econometrics*, 35(2), 233–264.
