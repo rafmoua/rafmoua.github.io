@@ -1,54 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Rafael Mouallem Rosa",
-    "section": "",
-    "text": "Rafael Mouallem Rosa\nI am a researcher at Inria, in the Statify team in Grenoble, France, working on Bayesian inference.\nMy current research centers on the Sources of Uncertainty (SoU) framework, which introduces confidence as an additional dimension of Bayesian inference, enabling the selective probabilistic treatment of different sources of uncertainty within a model. I explore its applications to statistical learning and macroeconometrics.\nBefore joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic study of choices under uncertainty, confronting uncertainty in financial markets, and modelling uncertainty in Bayesian statistical learning."
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications and Manuscripts",
-    "section": "",
-    "text": "Empowering Bayes with sources of uncertainty: from confidence modelling to sparse estimation\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\narXiv:2605.03134. arXiv · Code\nBayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\nAccepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop. Workshop\nSoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs\nRafael Mouallem Rosa and Julyan Arbel (2026).\nManuscript.\n\n\n\nSoU-BVARs: Adapting Inference about Macroeconomic Relationships\nRafael Mouallem Rosa (2026).\nManuscript.\nComplete markets with bankruptcy risk and pecuniary default punishments\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2023).\nEconomic Theory, 75(3), 625–640. Journal\nSecond-Order Beliefs and Second-Order Expected Utility\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2020).\nHAL preprint. HAL\nInvestment-specific technological change and the Brazilian macroeconomy\nVladimir Kuhl Teles, Carlos Júnior, and Rafael Mouallem Rosa (2015).\nBrazilian Review of Econometrics, 35(2), 233–264. Journal"
-  },
-  {
-    "objectID": "publications.html#statistics-and-machine-learning",
-    "href": "publications.html#statistics-and-machine-learning",
-    "title": "Publications and Manuscripts",
-    "section": "",
-    "text": "Empowering Bayes with sources of uncertainty: from confidence modelling to sparse estimation\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\narXiv:2605.03134. arXiv · Code\nBayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\nAccepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop. Workshop\nSoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs\nRafael Mouallem Rosa and Julyan Arbel (2026).\nManuscript."
-  },
-  {
-    "objectID": "publications.html#economics-and-decision-theory",
-    "href": "publications.html#economics-and-decision-theory",
-    "title": "Publications and Manuscripts",
-    "section": "",
-    "text": "SoU-BVARs: Adapting Inference about Macroeconomic Relationships\nRafael Mouallem Rosa (2026).\nManuscript.\nComplete markets with bankruptcy risk and pecuniary default punishments\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2023).\nEconomic Theory, 75(3), 625–640. Journal\nSecond-Order Beliefs and Second-Order Expected Utility\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2020).\nHAL preprint. HAL\nInvestment-specific technological change and the Brazilian macroeconomy\nVladimir Kuhl Teles, Carlos Júnior, and Rafael Mouallem Rosa (2015).\nBrazilian Review of Econometrics, 35(2), 233–264. Journal"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "The Sources of Uncertainty (SoU) framework extends Bayesian inference by allowing researchers to express different levels of confidence in distinct sources of uncertainty within a model. This enables a selective probabilistic treatment of model components, controlling how uncertainty associated with each component is retained and propagated. As a particular case, some components can retain the standard Bayesian treatment while others approach optimization, with empirical Bayes and profiling emerging as limiting cases.\nConfidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.\n\n\nIn macroeconometrics, I develop SoU-BVARs, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.\nI evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.\n\n\n\nIn sparse Bayesian learning, I develop SoU-SGL, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an “optimize structure, infer parameters” approach.\nI apply this mechanism to Bayesian neural networks through SoU-RHS, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings."
-  },
-  {
-    "objectID": "research.html#macroeconometrics",
-    "href": "research.html#macroeconometrics",
-    "title": "Research",
-    "section": "",
-    "text": "In macroeconometrics, I develop SoU-BVARs, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.\nI evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness."
-  },
-  {
-    "objectID": "research.html#sparse-learning",
-    "href": "research.html#sparse-learning",
-    "title": "Research",
-    "section": "",
-    "text": "In sparse Bayesian learning, I develop SoU-SGL, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an “optimize structure, infer parameters” approach.\nI apply this mechanism to Bayesian neural networks through SoU-RHS, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings."
-  },
-  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
@@ -75,5 +26,54 @@
     "title": "CV",
     "section": "Previous Industry Experience",
     "text": "Previous Industry Experience\nQuantitative Portfolio Manager — Safra Asset Management, 2020–2022\nPartner and Economist — Macro Capital Asset Management, 2019–2020"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "The Sources of Uncertainty (SoU) framework extends Bayesian inference by allowing researchers to express different levels of confidence in distinct sources of uncertainty within a model. This enables a selective probabilistic treatment of model components, controlling how uncertainty associated with each component is retained and propagated. As a particular case, some components can retain the standard Bayesian treatment while others approach optimization, with empirical Bayes and profiling emerging as limiting cases.\nConfidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.\n\n\nIn macroeconometrics, I develop SoU-BVARs, which use relationship-specific confidence weights to tailor inference within conventional Bayesian vector autoregressions. These weights are learned sequentially from past predictive evidence. Unlike increasing prior informativeness, the confidence mechanism can shrink estimated relationships while retaining greater posterior uncertainty about their effects.\nIn an expanding-window forecasting exercise with U.S. macroeconomic data, SoU-BVARs improve average point and probabilistic forecast accuracy relative to standard Bayesian inference across all BVAR specifications considered, including models with stochastic volatility and heavy-tailed innovations. The method also outperforms a comparable adaptation of prior informativeness. In the larger VAR system, assigning confidence at the relationship level yields greater predictive gains than assigning it at the equation or system level.\n\n\n\nIn sparse Bayesian learning, I develop SoU-SGL, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an “optimize structure, infer parameters” approach.\nI apply this mechanism to Bayesian neural networks through SoU-RHS, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings."
+  },
+  {
+    "objectID": "research.html#macroeconometrics",
+    "href": "research.html#macroeconometrics",
+    "title": "Research",
+    "section": "",
+    "text": "In macroeconometrics, I develop SoU-BVARs, which use relationship-specific confidence weights to tailor inference within conventional Bayesian vector autoregressions. These weights are learned sequentially from past predictive evidence. Unlike increasing prior informativeness, the confidence mechanism can shrink estimated relationships while retaining greater posterior uncertainty about their effects.\nIn an expanding-window forecasting exercise with U.S. macroeconomic data, SoU-BVARs improve average point and probabilistic forecast accuracy relative to standard Bayesian inference across all BVAR specifications considered, including models with stochastic volatility and heavy-tailed innovations. The method also outperforms a comparable adaptation of prior informativeness. In the larger VAR system, assigning confidence at the relationship level yields greater predictive gains than assigning it at the equation or system level."
+  },
+  {
+    "objectID": "research.html#sparse-learning",
+    "href": "research.html#sparse-learning",
+    "title": "Research",
+    "section": "",
+    "text": "In sparse Bayesian learning, I develop SoU-SGL, which uses selective probabilistic treatment to induce sparsity in global-local models. By assigning low confidence to local shrinkage scales, the method moves their treatment toward optimization while preserving Bayesian inference for the remaining components—an “optimize structure, infer parameters” approach.\nI apply this mechanism to Bayesian neural networks through SoU-RHS, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications and Manuscripts",
+    "section": "",
+    "text": "Empowering Bayes with sources of uncertainty: from confidence modelling to sparse estimation\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\narXiv:2605.03134. arXiv · Code\nBayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\nAccepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop. Workshop\nSoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs\nRafael Mouallem Rosa and Julyan Arbel (2026).\nManuscript.\n\n\n\nSoU-BVARs: Adapting Inference about Macroeconomic Relationships\nRafael Mouallem Rosa (2026).\nManuscript.\nComplete markets with bankruptcy risk and pecuniary default punishments\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2023).\nEconomic Theory, 75(3), 625–640. Journal\nSecond-Order Beliefs and Second-Order Expected Utility\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2020).\nHAL preprint. HAL\nInvestment-specific technological change and the Brazilian macroeconomy\nVladimir Kuhl Teles, Carlos Júnior, and Rafael Mouallem Rosa (2015).\nBrazilian Review of Econometrics, 35(2), 233–264. Journal"
+  },
+  {
+    "objectID": "publications.html#statistics-and-machine-learning",
+    "href": "publications.html#statistics-and-machine-learning",
+    "title": "Publications and Manuscripts",
+    "section": "",
+    "text": "Empowering Bayes with sources of uncertainty: from confidence modelling to sparse estimation\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\narXiv:2605.03134. arXiv · Code\nBayesian inference with sources of uncertainty: a confidence-weighted approach to sparsity\nRafael Mouallem Rosa, Julyan Arbel, and Hien Duy Nguyen (2026).\nAccepted workshop paper, OPTIMAL: Optimisation and Post-Bayesian Inference in Machine Learning, AISTATS 2026 Workshop. Workshop\nSoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs\nRafael Mouallem Rosa and Julyan Arbel (2026).\nManuscript."
+  },
+  {
+    "objectID": "publications.html#economics-and-decision-theory",
+    "href": "publications.html#economics-and-decision-theory",
+    "title": "Publications and Manuscripts",
+    "section": "",
+    "text": "SoU-BVARs: Adapting Inference about Macroeconomic Relationships\nRafael Mouallem Rosa (2026).\nManuscript.\nComplete markets with bankruptcy risk and pecuniary default punishments\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2023).\nEconomic Theory, 75(3), 625–640. Journal\nSecond-Order Beliefs and Second-Order Expected Utility\nVictor Filipe Martins-da-Rocha and Rafael Mouallem Rosa (2020).\nHAL preprint. HAL\nInvestment-specific technological change and the Brazilian macroeconomy\nVladimir Kuhl Teles, Carlos Júnior, and Rafael Mouallem Rosa (2015).\nBrazilian Review of Econometrics, 35(2), 233–264. Journal"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rafael Mouallem Rosa",
+    "section": "",
+    "text": "Rafael Mouallem Rosa\nI am a researcher at Inria, in the Statify team in Grenoble, France, working on Bayesian inference.\nMy current research centers on the Sources of Uncertainty (SoU) framework, which introduces confidence as an additional dimension of Bayesian inference, enabling the selective probabilistic treatment of different sources of uncertainty within a model. I explore its applications to statistical learning and macroeconometrics.\nBefore joining Inria, I completed a Ph.D. in Economics, working on decision theory, and later worked in financial markets as a quantitative portfolio manager. Across these experiences, a common theme has been uncertainty: the axiomatic study of choices under uncertainty, confronting uncertainty in financial markets, and modelling uncertainty in Bayesian statistical learning."
   }
 ]

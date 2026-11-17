@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b0bacdaee50ff9abb97ae013f25660d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f35a81a4717690815b2013502477d714.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -133,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Confidence operates through a mechanism distinct from prior informativeness, providing a complementary modelling tool that can be tuned to shape the posterior. This introduces an additional degree of freedom in Bayesian model design.</p>
 <section id="macroeconometrics" class="level2">
 <h2 class="anchored" data-anchor-id="macroeconometrics">Macroeconometrics</h2>
-<p>In macroeconometrics, I develop <strong>SoU-BVARs</strong>, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.</p>
-<p>I evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.</p>
+<p>In macroeconometrics, I develop <strong>SoU-BVARs</strong>, which use relationship-specific confidence weights to tailor inference within conventional Bayesian vector autoregressions. These weights are learned sequentially from past predictive evidence. Unlike increasing prior informativeness, the confidence mechanism can shrink estimated relationships while retaining greater posterior uncertainty about their effects.</p>
+<p>In an expanding-window forecasting exercise with U.S. macroeconomic data, SoU-BVARs improve average point and probabilistic forecast accuracy relative to standard Bayesian inference across all BVAR specifications considered, including models with stochastic volatility and heavy-tailed innovations. The method also outperforms a comparable adaptation of prior informativeness. In the larger VAR system, assigning confidence at the relationship level yields greater predictive gains than assigning it at the equation or system level.</p>
 </section>
 <section id="sparse-learning" class="level2">
 <h2 class="anchored" data-anchor-id="sparse-learning">Sparse Learning</h2>
