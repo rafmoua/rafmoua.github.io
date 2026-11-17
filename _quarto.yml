@@ -4,6 +4,7 @@ project:
 
 website:
   site-url: "https://rafmoua.github.io"
+  description: "Rafael Mouallem Rosa — researcher at Inria working on Bayesian inference, statistical learning, and econometrics."
   search: false
   navbar:
     pinned: true
