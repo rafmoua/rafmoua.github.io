@@ -11,9 +11,9 @@ Confidence operates through a mechanism distinct from prior informativeness, pro
 
 ## Macroeconometrics
 
-In macroeconometrics, I develop **SoU-BVARs**, which allow confidence in estimated relationships between macroeconomic variables to adapt as new data become available. Confidence is assigned to blocks of autoregressive coefficients and learned sequentially from predictive evidence. Unlike adjustments to prior informativeness, this mechanism allows stronger regularization to coexist with greater posterior uncertainty about these relationships.
+In macroeconometrics, I develop **SoU-BVARs**, which use relationship-specific confidence weights to tailor inference within conventional Bayesian vector autoregressions. These weights are learned sequentially from past predictive evidence. Unlike increasing prior informativeness, the confidence mechanism can shrink estimated relationships while retaining greater posterior uncertainty about their effects.
 
-I evaluate the approach in a U.S. macroeconomic forecasting exercise across six BVAR specifications, combining Minnesota and Normal-Gamma shrinkage priors with constant covariance, stochastic volatility, and stochastic volatility with Student-t innovations. Adaptive source confidence improves average point and probabilistic forecast accuracy across all six specifications, outperforming both conventional Bayesian inference and a comparable approach that adapts prior informativeness.
+In an expanding-window forecasting exercise with U.S. macroeconomic data, SoU-BVARs improve average point and probabilistic forecast accuracy relative to standard Bayesian inference across all BVAR specifications considered, including models with stochastic volatility and heavy-tailed innovations. The method also outperforms a comparable adaptation of prior informativeness. In the larger VAR system, assigning confidence at the relationship level yields greater predictive gains than assigning it at the equation or system level.
 
 ## Sparse Learning
 
