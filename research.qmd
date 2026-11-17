@@ -1,5 +1,7 @@
 ---
 title: "Research"
+aliases:
+  - publications.html
 ---
 
 # Sources of Uncertainty
