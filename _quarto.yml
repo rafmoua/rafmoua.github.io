@@ -22,5 +22,8 @@ format:
   html:
     theme: cosmo
     css: styles.css
+    include-in-header:
+      - text: |
+          <meta name="google-site-verification" content="ySWVEsSNdnMDbtmaDb9T1WJI3wRw-dMc6C-oLnLJOXM" />
     toc: false
     include-after-body: _includes/profile.html
