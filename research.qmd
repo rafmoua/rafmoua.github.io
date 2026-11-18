@@ -20,7 +20,7 @@ In macroeconometrics, I develop **SoU-BVARs**, which use relationship-specific c
 
 In an expanding-window forecasting exercise with U.S. macroeconomic data, SoU-BVARs improve average point and probabilistic forecast accuracy relative to standard Bayesian inference across all BVAR specifications considered, including models with stochastic volatility and heavy-tailed innovations. The method also outperforms a comparable adaptation of prior informativeness. In the larger VAR system, assigning confidence at the relationship level yields greater predictive gains than assigning it at the equation or system level.
 
-**SoU-BVARs: Adapting Inference about Macroeconomic Relationships**  
+[**SoU-BVARs: Adapting Inference about Macroeconomic Relationships**](https://hal.science/hal-05870923)  
 Rafael Mouallem Rosa (2026). *Working paper*.
 
 ## Sparse Learning
