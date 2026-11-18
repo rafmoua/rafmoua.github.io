@@ -29,7 +29,7 @@ In sparse Bayesian learning, I develop **SoU-SGL**, which uses selective probabi
 
 I apply this mechanism to Bayesian neural networks through **SoU-RHS**, combining it with regularized horseshoe shrinkage to recover compact CNN architectures. The recovered architectures show stable size and layer-wise structure across starting widths and pruning thresholds, suggesting that the method identifies compact structures adapted to the data. They are substantially smaller than those obtained with deterministic structured-sparsity methods, while generally achieving higher accuracy, consistently lower negative log-likelihood, and better calibration in most settings.
 
-**SoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs**  
+[**SoU-RHS: Bayesian Structured Sparsity for Compact Architecture Recovery in CNNs**](https://hal.science/hal-05868456)  
 Rafael Mouallem Rosa and Julyan Arbel (2026). *Submitted*.
 
 *Related academic activities:* [OPTIMAL workshop paper](https://optimal-workshop26.github.io/) (AISTATS 2026) · [ISBA 2026 oral presentation](https://events.conf.app/event/fe1bf927-baa2-4933-9e99-2efcafa0fcdd/agenda/5da2945c-4727-474b-898f-4cf37366b54a).
