@@ -3,6 +3,7 @@ project:
   output-dir: _site
 
 website:
+  google-analytics: "G-LNVJQK4QFC"
   site-url: "https://rafmoua.github.io"
   description: "Rafael Mouallem Rosa — researcher at Inria working on Bayesian inference, statistical learning, and econometrics."
   search: false
